@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Web P2P Chat App</title>
+</head>
+
+<body>
+    <h1>Welcome to the Web DHT App</h1>
+    <p>Server Public Key: <%= serverPublicKey %></p>
+    <p>Message from the server: <span id="message"></span></p>
+
+    <script>
+        const publicKeyHex = '<%= serverPublicKey %>';
+        const conn = new WebSocket('ws://localhost:3000/connect/' + publicKeyHex);
+
+        conn.onmessage = function (event) {
+            document.getElementById('message').textContent = event.data;
+        };
+    </script>
+</body>
+
+</html>
