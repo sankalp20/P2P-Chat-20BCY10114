@@ -1,0 +1,117 @@
+/* styles.module.css */
+.chat-box {
+    border: 1px solid #ccc;
+    padding: 10px;
+    height: 200px;
+    overflow-y: scroll;
+  }
+  
+  .message {
+    margin-bottom: 5px;
+  }
+
+  /* styles.module.css */
+/* Existing styles for .chat-box and .message */
+
+/* Add media queries for different screen sizes */
+@media screen and (max-width: 768px) {
+    /* For small devices like mobile phones */
+    .chat-box {
+      height: 150px;
+    }
+    .message {
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    /* For small devices like mobile phones */
+    .chat-box {
+      height: 150px;
+    }
+    .message {
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    /* For medium-sized devices like tablets */
+    .chat-box {
+      height: 250px;
+    }
+    .message {
+      font-size: 16px;
+    }
+  }
+  
+  /* styles.module.css */
+/* Existing styles for .chat-box and .message */
+
+/* Styles for the chat log container */
+.chatLog {
+    max-height: 400px;
+    overflow-y: auto;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    padding: 8px;
+  }
+  
+  /* Styles for the input and button */
+  .inputField {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .inputField:focus {
+    outline: none; /* Remove the default focus outline on the input field */
+    border-color: #007bff; /* Change the border color on focus */
+  }
+  
+  .sendButton {
+    padding: 10px 20px;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+  }
+  
+  .sendButton:hover {
+    background-color: #0056b3;
+  }
+  
+  /* Add media queries for different screen sizes */
+  @media screen and (max-width: 768px) {
+    /* For small devices like mobile phones */
+    .chat-box {
+      height: 150px;
+    }
+    .message {
+      font-size: 14px;
+    }
+  }
+  
+  @media screen and (min-width: 769px) and (max-width: 1024px) {
+    /* For medium-sized devices like tablets */
+    .chat-box {
+      height: 250px;
+    }
+    .message {
+      font-size: 16px;
+    }
+  }
+  
+  /* For larger devices like desktops and laptops, use the default styles (.chat-box and .message) */
+  
+  /* Additional styles for the input and button
+  input[type="text"] {
+    /* Style the input box as needed */
+  /* } */
+  
+  /* button { */
+    /* Style the send button as needed */
+  /* } */
+  
