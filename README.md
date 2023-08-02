@@ -10,6 +10,6 @@
 5.	Cd into app/server and Run ``` node server.js ```
 6.	Cd into app/client and Run ``` node client.js <server public key>```
 
-#  Issue
-![screenshot]screenshot.png
-![screenshot]screenshot2.png
+#  Output and Issue
+![screenshot](screenshot2.png)
+![screenshot](screenshot.png)
